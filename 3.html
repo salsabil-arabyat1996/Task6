@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .nav{
+            display: grid;
+            grid-template-columns: auto auto;
+            gap: 50px;
+            padding: 10px;
+            color: white;
+            height: 50px;
+            background-color: black;
+
+
+        }
+        .nav1{
+    grid-column: 1/2;
+}
+.nav2{
+    grid-column: 4/5;
+    justify-content: end;
+ 
+}
+.nav2 li{
+   display: inline-block;
+
+}
+.nav2 ul{
+ list-style-type: none;
+   
+}
+
+
+/* 2 */
+
+.contaier{
+    display: grid;
+    height: 700px;
+    grid-template-columns: repeat(4.1fr) ;
+    background-color: rgb(255, 255, 255);
+}
+
+.article{
+    grid-column: 1/4;
+    height: 700px;
+}
+
+h2{
+    background-color: rgb(51,51,51);
+    padding: 0px;
+    margin: auto;
+    height: 50px;
+    color: white;
+    font-size: 15pt;
+ 
+}
+.card{
+    display: grid;
+    grid-template-columns: repeat(3.1fr);
+    gap:20px;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    height:200px;
+
+}
+
+
+.card-b1{
+    border: 3px solid rgb(51,51,51);
+    height:fit-content;
+}
+
+
+#card-one,.card-four{
+    grid-column: 1/2; 
+
+   
+}
+#card-two,.card-five{
+    grid-column: 2/3; 
+
+}
+#card-three{
+    grid-column: 3/4; 
+}
+
+
+.side {
+    background-color: rgb(51,51,51);
+    color: white;
+    /* height: 500px; */
+    grid-column: 4;
+    height: 700px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+    text-align: center;
+    /* width: 30%; */
+
+}
+
+
+ @media screen and (max-width: 593px) {
+   .nav{
+            display: grid;
+            grid-template-columns: auto auto;
+            gap: 50px;
+            padding: 10px;
+            color: white;
+            height: 50px;
+            background-color: black;
+
+
+        }
+
+    .card{
+    display: grid;
+    grid-template-columns: repeat(3.1fr);
+    width: 100%;
+    gap:20px;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    height:200px;
+
+}
+
+#card-one{
+    grid-column: 1/3; 
+
+    grid-row: 1; 
+
+   
+}
+#card-two{
+    grid-column: 1/3; 
+
+    grid-row: 2; 
+
+}
+#card-three{
+    grid-column: 1/3; 
+
+    grid-row: 3; 
+}
+#card-four{
+    grid-column: 1/3; 
+
+    grid-row: 4; 
+}
+#card-five{
+    grid-column: 1/3; 
+
+    grid-row: 5; 
+}
+/* .side {
+    display: none;
+} */
+
+.side {
+    background-color: rgb(51,51,51);
+    color: white;
+    height: 500px;
+    grid-column: 4;
+    height: 700px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+    text-align: center;
+    /* width: 30%; */
+    
+}
+
+} 
+
+
+</style>
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="nav">
+  
+        <div class="nav1">
+        <h3>My Website</h3>
+        </div>
+        
+        <div class="nav2">
+            <ul>
+                <li>link 1</li>
+                <li>link 2</li>
+                <li>link 3</li>
+            </ul>
+        </div>
+      </div>  
+      <!-- end nav -->
+
+      <div class="contaier">
+
+        <div class="article">
+            <h3>This is the main heading </h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis exercitationem ducimus .</p>
+            <p></p> <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis exercitationem ducimus odio doloremque tenetur maxime, eum magnam! </p> 
+           
+            <div class="card">
+                <div id="card-one" class="card-b1">
+                   <h2>Card One</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis exercitationem ducimus odio doloremque tenetur maxime, eum magnam! Provident cupiditate rerum voluptatem, placeat, veritatis dolorem eius, deleniti corporis temporibus perspiciatis aspernatur.</p>
+                </div>
+                <div id="card-two" class="card-b1">
+                    <h2>Card two</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis exercitationem ducimus odio doloremque tenetur maxime, eum magnam! Provident cupiditate rerum voluptatem, placeat, veritatis dolorem eius, deleniti corporis temporibus perspiciatis aspernatur.</p>
+                </div>
+                <div id="card-three" class="card-b1">
+                    <h2>Card three</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis exercitationem ducimus odio doloremque tenetur maxime, eum magnam! Provident cupiditate rerum voluptatem, placeat, veritatis dolorem eius, deleniti corporis temporibus perspiciatis aspernatur.</p>
+                </div>
+                <div id="card-four" class="card-b1">
+                    <h2>Card four</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis exercitationem ducimus odio doloremque tenetur maxime, eum magnam! Provident cupiditate rerum voluptatem, placeat, veritatis dolorem eius, deleniti corporis temporibus perspiciatis aspernatur.</p>
+                </div>
+                <div id="card-five" class="card-b1">
+                    <h2>Card five</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis exercitationem ducimus odio doloremque tenetur maxime, eum magnam! Provident cupiditate rerum voluptatem, placeat, veritatis dolorem eius, deleniti corporis temporibus perspiciatis aspernatur.</p>
+                </div>
+                </div>
+        
+        
+        
+        </div>
+
+<div class="side">
+    <p>have you discovered all of the other exellent conent on this website?</p>
+      </div>
+
+</div>
+</body>
+</html>

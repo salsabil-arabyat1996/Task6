@@ -1,0 +1,63 @@
+.container{
+    display: flex;
+    width: 100%;
+    height: 500px;
+    padding-top: 15px;
+    gap: 15px;
+
+}
+
+.box1{ 
+    width: 30%;
+    height: 274px;
+    border: 1px solid gray;
+    display: flex;
+    margin-left: 15px;
+
+}
+.left{
+    width: 15%;
+    height: 273px;
+    
+}
+
+.p{
+    display: flex;
+}
+
+.right{
+    padding-left: 8px;
+}
+
+.small-img{
+   width: 35px;
+   height: 35px;
+   border-radius: 90px;
+}
+
+.photo{
+    display: flex;
+    padding-top: 45px;
+}
+
+.small-img{
+    padding-right: 10px;
+}
+
+.box2{ 
+    width: 30%;
+    height: 274px;
+    border: 1px solid gray;
+    display: flex;
+    margin-left: 15px;
+
+}
+
+.box3{ 
+    width: 30%;
+    height: 274px;
+    border: 1px solid gray;
+    display: flex;
+    margin-left: 15px;
+
+}

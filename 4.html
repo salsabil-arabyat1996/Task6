@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 5px;
+padding: 5px;
+height: 500px;
+}
+
+.grid-item1{
+    grid-column: 1/2;
+    background-color: ghostwhite;
+    border: 1px solid black;
+    height: 400px;
+}
+.grid-item2{
+
+grid-column: 2/3;
+background-color: ghostwhite;
+border: 1px solid black;
+height: 400px;
+}
+.grid-item3{
+
+grid-column: 3/4;
+background-color: ghostwhite;
+border: 1px solid black;
+height: 400px;
+}
+.group1{
+    display: grid;
+    grid-template: auto auto;
+gap: 10px;
+padding: 5px;
+height:  190px;
+
+}
+.img{
+    grid-column: 1/span  1;
+    background-color: ghostwhite;
+    height: 200px;
+}
+.article{
+    grid-column: 2/span  1;
+    background-color: ghostwhite;
+    height: 200px;
+    
+}
+img{
+    width: 200px;
+    height: 390px;
+}
+
+.image img{
+    width: 50px;
+    height: 50px;
+    border-radius: 90px;
+   
+}
+.image {
+    grid-column: 2/span  1;
+    background-color: ghostwhite;
+    height: 100px;
+    
+}
+
+
+ /* @media screen and (max-width: 1300px) {
+
+
+
+    .grid-container{
+    display: grid;
+    grid-template-columns: auto auto ;
+    gap: 5px;
+padding: 5px;
+height: 500px;
+}
+
+.grid-item1{
+    grid-column: 1/2;
+    grid-row: 1;
+    background-color: ghostwhite;
+    border: 1px solid black;
+    height: 400px;
+}
+.grid-item2{
+
+    grid-column: 2/3;
+    grid-row: 1;
+background-color: ghostwhite;
+border: 1px solid black;
+height: 400px;
+}
+.grid-item3{
+
+    grid-column: 1/2;
+    grid-row: 2;
+    background-color: ghostwhite;
+border: 1px solid black;
+height: 400px;
+}
+}  */
+
+
+ @media screen and (max-width: 800px) {
+
+
+
+.grid-container{
+display: grid;
+grid-template-columns: auto auto auto;
+gap: 5px;
+padding: 5px;
+height: 500px;
+}
+
+.grid-item1{
+grid-column: 1/4;
+grid-row: 1;
+background-color: ghostwhite;
+border: 1px solid black;
+height: 400px;
+}
+.grid-item2{
+
+grid-column: 1/4;
+grid-row: 2;
+background-color: ghostwhite;
+border: 1px solid black;
+height: 400px;
+}
+.grid-item3{
+
+grid-column: 1/4;
+grid-row: 4;
+background-color: ghostwhite;
+border: 1px solid black;
+height: 400px;
+}
+
+.group1{
+    display: grid;
+    grid-template: repeat(3.1fr);
+gap: 10px;
+padding: 5px;
+height:  190px;
+
+}
+.img{
+    grid-column: 1/ span 1;
+    background-color: ghostwhite;
+    height: 200px;
+}
+.article{
+    grid-column: 2/4;
+    background-color: ghostwhite;
+    height: 200px;
+    
+}
+img{
+    width: 120px;
+    height: 390px;
+}
+
+.image img{
+    width: 50px;
+    height: 50px;
+    border-radius: 90px;
+   
+}
+
+
+
+}  
+
+
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item1">
+            <div class="group1">
+                <div class="img">
+                    <img src="images (12).jpg">
+                </div>
+                <div class="article">
+                <h4>Best Mountain Trails 2020</h4>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla!
+                       Maiores et perferendis eaque, exercitationem praesentium nihil.
+                </p>      
+                 </div>
+                <div class="image">
+                    <!-- <div class="card"> -->
+                        <!-- <div class="card1"> -->
+                            <img src="images (6).jpg">
+
+                        <!-- </div> -->
+                      <!-- <div class="card2"> -->
+                        <p>John Smith</p>
+                       <h6>Aug 18</h6>
+                        <!-- </div> -->
+                 
+                     <!-- </div> -->
+
+               </div>
+
+            </div>
+                     
+            
+        </div>
+
+
+
+
+        <div class="grid-item2">
+            <div class="group1">
+                <div class="img">
+                    <img src="Hopetoun_falls.jpg">
+                </div>
+                <div class="article">
+                    <h4>15 Rivers In Norway</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla!
+    Maiores et perferendis eaque, exercitationem praesentium nihil.
+                    </p>
+                </div>
+                    <div class="image">
+                        <img src="photo-1494790108377-be9c29b29330 copy.jpg">
+                        <p>Karein Johanic</p>
+                        <h6>Aug 18</h6>
+                    </div>
+                
+                </div>
+                
+                
+                
+               
+
+
+
+
+
+        </div>
+        <div class="grid-item3">
+            
+            <div class="group1">
+                <div class="img">
+                    <img src="f6514aea-a792-402a-95b1-3af00d289d6e.jpg">
+                </div>
+                <div class="article">
+                
+                    <h4>5 National Forests across the
+                        U.S.</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla!
+                          Maiores et perferendis eaque, exercitationem praesentium nihil.
+                    </p></div>
+                    <div class="image">
+                        <img src="images (6).jpg">
+                        <p>Rafial Marian</p>
+                        <h6>Aug 18</h6>
+                    </div>
+                </div>
+                
+                
+                
+                </div>
+
+
+
+
+
+        </div>  
+      
+      </div>
+       
+</body>
+</html>
